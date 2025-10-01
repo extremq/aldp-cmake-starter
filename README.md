@@ -13,4 +13,30 @@ make
 ./hello
 ```
 
+## Other details
+To check on which cores the process is running, determine the process id and then:
+```
+ps -mo pid,tid,%cpu,psr -p <PID>
+```
+
+Example output on my 14-core CPU:
+```
+    PID     TID %CPU PSR
+ 729401       -  0.0   -
+      -  729401  0.0   4
+      -  729402  0.0   3
+      -  729403  0.0   5
+      -  729404  0.0  11
+      -  729405  0.0   4
+      -  729406  0.0  11
+      -  729407  0.0   0
+      -  729408  0.0  11
+      -  729409  0.0  10
+      -  729410  0.0  10
+      -  729411  0.0   4
+      -  729412  0.0  10
+      -  729413  0.0   0
+      -  729414  0.0   1
+```
+
 Tested with Clang & Ninja.

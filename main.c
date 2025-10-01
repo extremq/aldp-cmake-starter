@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <omp.h>
+#include <unistd.h>
 
-#define NITER 16
+#define NITER 1000
 
 int main(void) {
     int tid, iter;
@@ -13,6 +14,7 @@ int main(void) {
         #pragma omp for
         for (iter = 0; iter < NITER; ++iter) {
             printf("%d proceseaza %d\n", tid, iter);
+            sleep(3);
         }
     }
 
