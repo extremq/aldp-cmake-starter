@@ -2,6 +2,7 @@
 This is a C starter project for the ALDP course which uses OpenMP.
 To use the C++ version, `_CMakeLists.txt` is the correct configuration.
 
+Install Cmake. On most Linux distributions, the package should be named `cmake`.
 On Ubuntu, install `libomp-dev` for OpenMP libs.
 
 To build the project using the default GCC compiler and Make build, do:
