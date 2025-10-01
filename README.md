@@ -14,7 +14,7 @@ make
 ```
 
 ## Other details
-To check on which cores the process is running, determine the process id and then:
+To check on which cores the threads are running, determine the process id and then:
 ```
 ps -mo pid,tid,%cpu,psr -p <PID>
 ```
