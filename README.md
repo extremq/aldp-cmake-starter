@@ -1,4 +1,4 @@
-# ALPD CMAKE starter
+# ALPD CMake starter
 This is a C starter project for the ALDP course which uses OpenMP.
 To use the C++ version, `_CMakeLists.txt` is the correct configuration.
 
